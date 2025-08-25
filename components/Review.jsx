@@ -3,16 +3,15 @@ import classNames from 'classnames'
 
 function Review({ title, img, msg, rating }) {
   return (
-    <div className='p-8 shadow-brand border border-black/20 rounded-md relative transition-all'>
-      <i className={classNames('fas fa-quote-right absolute top-8 right-8 text-[6rem] text-brandGrey -z-[1]')}/>
-      <div className='flex gap-6 items-center pb-6'>
-        <img className='h-[7rem] w-[7rem] rounded-full object-cover' src={img} alt={title} />
-        <div>
-          <h3 className='text-brandBlack text-[2.5rem] pb-2'>{title}</h3>
-          <StarRating value={rating} />
+    <div className='p-6 shadow-brand border border-black/20 rounded-md relative transition-all h-full flex flex-col'>
+      <div className='flex gap-4 items-center pb-4'>
+        <img className='h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover' src={img} alt={title} />
+        <div className='min-w-0'>
+          <h3 className='text-brandBlack text-xl sm:text-2xl font-medium truncate'>{title}</h3>
+          <div className='-ml-1'><StarRating value={rating} /></div>
         </div>
       </div>
-      <p className='text-[1.5rem] leading-8 text-gray-500'>{msg}</p>
+      <p className='text-gray-600 text-sm sm:text-base leading-relaxed mt-2 line-clamp-4'>{msg}</p>
     </div>
   )
 }

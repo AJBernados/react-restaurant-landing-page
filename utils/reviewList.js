@@ -1,31 +1,31 @@
 const reviewList = [
   {
     id: 1,
-    title: 'john doe',
+    title: 'Adrian',
     img: 'images/pic-1.png',
-    msg: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.',
+    msg: 'Rice disappeared faster than the sisig. That’s suspicious.',
     rating: 4
   },
   {
     id: 2,
-    title: 'john doe',
+    title: 'David',
     img: 'images/pic-2.png',
-    msg: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.',
-    rating: 4
+    msg: 'Egg on top was cooked perfectly. I mixed it in and suddenly my life had meaning again. Honestly, my only complaint is that it didn’t magically refill itself.',
+    rating: 5
   },
   {
     id: 3,
-    title: 'john doe',
+    title: 'AJohn',
     img: 'images/pic-3.png',
-    msg: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.',
-    rating: 4
+    msg: 'It was too oily, but here’s the problem: I still ate every single bite and even scraped the pan. So technically, I can’t complain. But I will anyway.',
+    rating: 3
   },
   {
     id: 4,
-    title: 'john doe',
+    title: 'Kanye',
     img: 'images/pic-4.png',
-    msg: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.',
-    rating: 4
+    msg: 'Other people eat sisig. I AM sisig. Without me, the plate don’t even sizzle.',
+    rating: 1
   }
 ]
 

@@ -1,57 +1,57 @@
 const dishList = [
   {
     id: 1,
-    title: 'hamburger',
+    title: 'Sisig Wow',
     img: 'images/dish-1.png',
     rating: '4.5',
     detailed: true,
     favorited: true,
-    price: '15.99'
+    price: '₱249'
   },
   {
     id: 2,
-    title: 'Chicken nuggets',
+    title: 'Sisig with Love',
     img: 'images/dish-2.png',
     rating: '4.5',
     detailed: true,
     favorited: true,
-    price: '15.99'
+    price: '₱199'
   },
   {
     id: 3,
-    title: 'Fried chicken',
+    title: 'Sisig Jacinto',
     img: 'images/dish-3.png',
     rating: '4.5',
     detailed: true,
     favorited: true,
-    price: '15.99'
+    price: '₱179'
   },
   {
     id: 4,
-    title: 'Hot pizza',
+    title: 'Sisig Master',
     img: 'images/dish-4.png',
     rating: '4.5',
     detailed: true,
     favorited: true,
-    price: '15.99'
+    price: '₱349'
   },
   {
     id: 5,
-    title: 'ice cream cookies',
+    title: 'Sisig Breakup',
     img: 'images/dish-5.png',
     rating: '4.5',
     detailed: true,
     favorited: true,
-    price: '15.99'
+    price: '₱129'
   },
   {
     id: 6,
-    title: 'chicken drums',
+    title: 'Sisig A+',
     img: 'images/dish-6.png',
     rating: '4.5',
     detailed: true,
     favorited: true,
-    price: '15.99'
+    price: '₱219'
   }
 ]
 

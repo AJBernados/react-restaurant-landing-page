@@ -3,15 +3,21 @@ import dishList from '@/utils/dishList'
 
 function Dishes() {
   return (
-    <section className='w-full bg-white'>
-      <div className='w-full max-w-[1200px] mx-auto px-4 md:px-8 py-8 bg-brandGrey rounded-md shadow-[0_8px_24px_rgba(0,0,0,0.06)]' id='dishes'>
-      <h3 className='sub-heading'>our dishes</h3>
-      <h1 className='heading'>popular dishes</h1>
-      <div className='grid [grid-template-columns:repeat(auto-fit,minmax(28rem,1fr))] gap-6 transition-all'>
-        {dishList.map((item, index) => {
-          return <Dish key={index} {...item} />
-        })}
-      </div>
+    <section className='w-full py-12 sm:py-16 bg-white' id='dishes'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div className='text-center mb-10'>
+          <h3 className='sub-heading'>Our dishes</h3>
+          <h1 className='heading mb-3'>Popular dishes</h1>
+          <p className='max-w-2xl mx-auto text-gray-600 text-base sm:text-lg'>
+            Discover our most loved dishes, made with the finest ingredients
+          </p>
+        </div>
+        
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+          {dishList.map((item, index) => (
+            <Dish key={index} {...item} />
+          ))}
+        </div>
       </div>
     </section>
   )

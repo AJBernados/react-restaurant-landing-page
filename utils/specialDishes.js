@@ -1,27 +1,27 @@
 const sliderItems = [
   {
     id: '1',
-    title: 'spicy noodles',
-    subtitle: 'our special dish',
+    title: 'Sisig',
+    subtitle: 'Our special dish',
     description:
-      'Soy sauce salt miso butter roasted pork slices flavoured.',
-    img: 'images/home-img-1.png'
+      'Sisig ipsum dolar salemi waka ni apple banana.',
+    img: '/images/home-image-1.png'
   },
   {
     id: '2',
-    title: 'fried chicken',
-    subtitle: 'our special dish',
+    title: 'Sisig',
+    subtitle: 'Our special dish',
     description:
-      'Bacon ipsum dolor amet short ribs brisket venison drumstick.',
-    img: 'images/home-img-2.png'
+      'Sisig ipsum dolor amet bing bing test test.',
+    img: '/images/home-image-2.png'
   },
   {
     id: '3',
-    title: 'hot pizza',
-    subtitle: 'our special dish',
+    title: 'Sisig',
+    subtitle: 'Our special dish',
     description:
-      'Pizza ipsum dolor amet mushrooms Chicago style string cheese.',
-    img: 'images/home-img-3.png'
+      'Sisig ipsum waka waka eh eh.',
+    img: '/images/home-image-3.png'
   }
 ]
 

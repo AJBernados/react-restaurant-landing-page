@@ -1,16 +1,40 @@
+import { getButtonClasses } from '@/utils/buttonStyles'
+import Image from 'next/image'
+
 function SpecialDish({ title, subtitle, description, img }) {
   return (
-    <div className='flex items-center flex-wrap gap-8 pt-[24px] md:pt-[48px]'>
-      <div className='basis-[45rem] grow'>
-        <span className='text-themeYellow text-[2.5rem]'>{subtitle}</span>
-        <h3 className='text-brandBlack text-[7rem] max-md:text-[5rem]'>{title}</h3>
-        <p className='text-gray-500 text-[2.2rem] py-2 leading-6'>{description}</p>
-        <a href='#' className='button'>
-          order now
-        </a>
+    <div className='flex flex-col h-full bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300'>
+      {/* Image */}
+      <div className='relative h-48 sm:h-56 w-full bg-gray-100'>
+        <Image
+          src={img}
+          alt={title}
+          fill
+          className='object-cover'
+          sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+          priority
+        />
       </div>
-      <div className='basis-[45rem] grow'>
-        <img src={img} alt={title} className='w-full' />
+      
+      {/* Content */}
+      <div className='p-5 flex flex-col h-full'>
+        <div className='flex-grow'>
+          <span className='inline-block text-brandYellow text-lg font-medium mb-1'>
+            {subtitle}
+          </span>
+          <h3 className='text-xl font-bold text-gray-900 mb-2 line-clamp-2'>
+            {title}
+          </h3>
+          <p className='text-gray-600 text-sm mb-4 line-clamp-3'>
+            {description}
+          </p>
+        </div>
+        <a 
+          href='#' 
+          className={`${getButtonClasses('py-2 text-sm')} w-full text-center`}
+        >
+          Order Now
+        </a>
       </div>
     </div>
   )

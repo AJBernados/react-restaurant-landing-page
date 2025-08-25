@@ -5,7 +5,7 @@ function StarRating({ min = 0, max = 5, value }) {
   const [rating, setRating] = useState(value)
   const [hover, setHover] = useState(min)
   return (
-    <div className='py-4'>
+    <div className='flex gap-0.5'>
       {[...Array(max)].map((star, index) => {
         const ratingValue = index + 1
         const isMarked = (hover || rating) >= ratingValue
@@ -13,7 +13,7 @@ function StarRating({ min = 0, max = 5, value }) {
           <span
             key={index}
             data-value={ratingValue}
-            className={classNames('fas', 'fa-star', 'text-[1.7rem] cursor-pointer transition-all', {
+            className={classNames('fas fa-star text-lg sm:text-xl cursor-pointer transition-all w-5 text-center', {
               'text-brandGreen': isMarked,
               'text-brandGrey': !isMarked
             })}

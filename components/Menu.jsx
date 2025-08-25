@@ -3,13 +3,15 @@ import menuDishList from '@/utils/menuDishList'
 
 function Menu() {
   return (
-    <section className='w-full' id='menu'>
-      <h3 className='sub-heading'>our menu</h3>
-      <h1 className='heading'>today&apos;s speciality</h1>
-      <div className='grid [grid-template-columns:repeat(auto-fit,minmax(30rem,1fr))] gap-6 transition-all'>
-        {menuDishList.map((menu, index) => {
-          return <Dish key={index} {...menu} />
-        })}
+    <section className='w-full py-12 sm:py-16' id='menu'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <h3 className='sub-heading text-center'>Our menu</h3>
+        <h1 className='heading text-center mb-8 sm:mb-12'>Today&apos;s Speciality</h1>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6'>
+          {menuDishList.map((menu, index) => (
+            <Dish key={index} {...menu} />
+          ))}
+        </div>
       </div>
     </section>
   )

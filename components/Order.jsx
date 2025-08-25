@@ -3,12 +3,12 @@ import classNames from 'classnames'
 function Order() {
   return (
     <section className='' id='order'>
-      <h3 className='sub-heading'>order now</h3>
-      <h1 className='heading'>free and fast</h1>
+      <h3 className='sub-heading text-center'>Order Now</h3>
+      <h1 className='heading text-center pb-10'>Fast Delivery!</h1>
       <form action='#' className='max-w-[90rem] mx-auto p-6 bg-white border border-black/20 rounded-md shadow-brand transition-all'>
         <div className='flex flex-wrap justify-between'>
           <div className='w-[49%] max-[450px]:w-full'>
-            <span className='py-2 block text-[1.5rem] text-gray-500'>your name</span>
+            <span className='py-2 block text-[1.5rem] text-gray-500'>Your name</span>
             <input
               className='w-full p-4 mb-4 bg-brandGrey text-[1.6rem] text-brandBlack rounded-md border border-transparent focus:border-brandGreen transition-all outline-none'
               type='text'
@@ -16,7 +16,7 @@ function Order() {
             ></input>
           </div>
           <div className='w-[49%] max-[450px]:w-full'>
-            <span className='py-2 block text-[1.5rem] text-gray-500'>your number</span>
+            <span className='py-2 block text-[1.5rem] text-gray-500'>Your number</span>
             <input
               className='w-full p-4 mb-4 bg-brandGrey text-[1.6rem] text-brandBlack rounded-md border border-transparent focus:border-brandGreen transition-all outline-none'
               type='text'
@@ -26,7 +26,7 @@ function Order() {
         </div>
         <div className='flex flex-wrap justify-between'>
           <div className='w-[49%] max-[450px]:w-full'>
-            <span className='py-2 block text-[1.5rem] text-gray-500'>your order</span>
+            <span className='py-2 block text-[1.5rem] text-gray-500'>Your order</span>
             <input
               className='w-full p-4 mb-4 bg-brandGrey text-[1.6rem] text-brandBlack rounded-md border border-transparent focus:border-brandGreen transition-all outline-none'
               type='text'
@@ -34,7 +34,7 @@ function Order() {
             ></input>
           </div>
           <div className='w-[49%] max-[450px]:w-full'>
-            <span className='py-2 block text-[1.5rem] text-gray-500'>additional food</span>
+            <span className='py-2 block text-[1.5rem] text-gray-500'>Additional food</span>
             <input
               className='w-full p-4 mb-4 bg-brandGrey text-[1.6rem] text-brandBlack rounded-md border border-transparent focus:border-brandGreen transition-all outline-none'
               type='text'
@@ -44,7 +44,7 @@ function Order() {
         </div>
         <div className='flex flex-wrap justify-between'>
           <div className='w-[49%] max-[450px]:w-full'>
-            <span className='py-2 block text-[1.5rem] text-gray-500'>how much</span>
+            <span className='py-2 block text-[1.5rem] text-gray-500'>How much</span>
             <input
               className='w-full p-4 mb-4 bg-brandGrey text-[1.6rem] text-brandBlack rounded-md border border-transparent focus:border-brandGreen transition-all outline-none'
               type='number'
@@ -52,7 +52,7 @@ function Order() {
             ></input>
           </div>
           <div className='w-[49%] max-[450px]:w-full'>
-            <span className='py-2 block text-[1.5rem] text-gray-500'>date and time</span>
+            <span className='py-2 block text-[1.5rem] text-gray-500'>Date and Time</span>
             <input
               className='w-full p-4 mb-4 bg-brandGrey text-[1.6rem] text-brandBlack rounded-md border border-transparent focus:border-brandGreen transition-all outline-none'
               type='datetime-local'
@@ -86,7 +86,7 @@ function Order() {
         </div>
         <input
           type='submit'
-          value='order now'
+          value='Order now'
           className={classNames('button', 'mt-0')}
         />
       </form>
