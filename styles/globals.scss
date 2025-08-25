@@ -2,11 +2,11 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 :root {
-  --white: #fff;
-  --grey: #eee;
+  --white: #FFFFFF;
+  --grey: #f5f5f5;
   --light-color: #666;
-  --black: #192a56;
-  --green: #27ae60;
+  --black: #000000;
+  --green: #FFC601;
   --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   --transition: all 0.2s linear;
 }
@@ -20,7 +20,11 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize;
+}
+
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
 }
 
 html {
@@ -29,26 +33,14 @@ html {
   scroll-padding-top: 5.5rem;
   scroll-behavior: smooth;
   font-family: 'Nunito', sans-serif;
+}
 
-  @media screen and (max-width: 991px) {
-    font-size: 55%;
-  }
-
-  @media screen and (max-width: 450 px) {
-    font-size: 50%;
-  }
+body {
+  background: var(--white);
 }
 
 section {
-  padding: 2rem;
-
-  &:nth-child(even) {
-    background-color: var(--grey);
-  }
-
-  @media screen and (max-width: 991px) {
-    padding: 2rem;
-  }
+  padding: 0; /* Tailwind handles spacing per-section */
 }
 
 .button {
@@ -61,11 +53,11 @@ section {
   cursor: pointer;
   padding: 0.8rem;
   transition: var(--transition);
+}
 
-  &:hover {
-    background: var(--green);
-    letter-spacing: 0.1rem;
-  }
+.button:hover {
+  background: var(--green);
+  letter-spacing: 0.1rem;
 }
 
 .heading {

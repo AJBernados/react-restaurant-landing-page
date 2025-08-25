@@ -1,18 +1,16 @@
-import styles from '@/styles/components/SpecialDish.module.scss'
-
 function SpecialDish({ title, subtitle, description, img }) {
   return (
-    <div className={styles['special-dish']}>
-      <div className={styles['special-dish__content']}>
-        <span className={styles['special-dish__subtitle']}>{subtitle}</span>
-        <h3 className={styles['special-dish__title']}>{title}</h3>
-        <p className={styles['special-dish__description']}>{description}</p>
+    <div className='flex items-center flex-wrap gap-8 pt-[24px] md:pt-[48px]'>
+      <div className='basis-[45rem] grow'>
+        <span className='text-themeYellow text-[2.5rem]'>{subtitle}</span>
+        <h3 className='text-brandBlack text-[7rem] max-md:text-[5rem]'>{title}</h3>
+        <p className='text-gray-500 text-[2.2rem] py-2 leading-6'>{description}</p>
         <a href='#' className='button'>
           order now
         </a>
       </div>
-      <div className={styles['special-dish__image']}>
-        <img src={img} alt={title} />
+      <div className='basis-[45rem] grow'>
+        <img src={img} alt={title} className='w-full' />
       </div>
     </div>
   )

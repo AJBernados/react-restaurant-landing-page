@@ -2,17 +2,16 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper'
 import Review from './Review'
 import reviewList from '@/utils/reviewList'
-import styles from '@/styles/components/Reviews.module.scss'
 
 function Reviews() {
   return (
-    <section className={styles.reviews} id='reviews'>
+    <section className='w-full' id='reviews'>
       <h3 className='sub-heading'>customer&apos;s review</h3>
       <h1 className='heading'>what they say</h1>
-      <div className={styles.reviews__container}>
+      <div className='w-full'>
         <Swiper
           key="swiper-review"
-          className={styles.reviews__swiper}
+          className='w-full'
           modules={[Autoplay]}
           spaceBetween={30}
           centeredSlides={true}

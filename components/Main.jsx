@@ -4,11 +4,10 @@ import About from './About'
 import Menu from './Menu'
 import Reviews from './Reviews'
 import Order from './Order'
-import styles from '@/styles/components/Main.module.scss'
 
 function Main() {
   return (
-    <main className={styles.main}>
+    <main className='w-full flex flex-col py-4 px-[7%] bg-white transition-all md:px-8'>
       <SpecialDishes />
       <Dishes />
       <About />

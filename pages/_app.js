@@ -2,6 +2,7 @@ import 'swiper/css'
 import 'swiper/css/autoplay'
 import 'swiper/css/pagination'
 
+import '@/styles/tailwind.css'
 import '@/styles/globals.scss'
 
 function MyApp({ Component, pageProps }) {

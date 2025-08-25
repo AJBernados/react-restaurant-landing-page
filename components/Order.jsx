@@ -1,71 +1,70 @@
 import classNames from 'classnames'
-import styles from '@/styles/components/Order.module.scss'
 
 function Order() {
   return (
-    <section className={styles.order} id='order'>
+    <section className='' id='order'>
       <h3 className='sub-heading'>order now</h3>
       <h1 className='heading'>free and fast</h1>
-      <form action='#' className={styles.form}>
-        <div className={styles.order__container}>
-          <div className={styles.form__item}>
-            <span className={styles.label}>your name</span>
+      <form action='#' className='max-w-[90rem] mx-auto p-6 bg-white border border-black/20 rounded-md shadow-brand transition-all'>
+        <div className='flex flex-wrap justify-between'>
+          <div className='w-[49%] max-[450px]:w-full'>
+            <span className='py-2 block text-[1.5rem] text-gray-500'>your name</span>
             <input
-              className={styles.input}
+              className='w-full p-4 mb-4 bg-brandGrey text-[1.6rem] text-brandBlack rounded-md border border-transparent focus:border-brandGreen transition-all outline-none'
               type='text'
               placeholder='enter your name'
             ></input>
           </div>
-          <div className={styles.form__item}>
-            <span className={styles.label}>your number</span>
+          <div className='w-[49%] max-[450px]:w-full'>
+            <span className='py-2 block text-[1.5rem] text-gray-500'>your number</span>
             <input
-              className={styles.input}
+              className='w-full p-4 mb-4 bg-brandGrey text-[1.6rem] text-brandBlack rounded-md border border-transparent focus:border-brandGreen transition-all outline-none'
               type='text'
               placeholder='enter your number'
             ></input>
           </div>
         </div>
-        <div className={styles.order__container}>
-          <div className={styles.form__item}>
-            <span className={styles.label}>your order</span>
+        <div className='flex flex-wrap justify-between'>
+          <div className='w-[49%] max-[450px]:w-full'>
+            <span className='py-2 block text-[1.5rem] text-gray-500'>your order</span>
             <input
-              className={styles.input}
+              className='w-full p-4 mb-4 bg-brandGrey text-[1.6rem] text-brandBlack rounded-md border border-transparent focus:border-brandGreen transition-all outline-none'
               type='text'
               placeholder='enter food name'
             ></input>
           </div>
-          <div className={styles.form__item}>
-            <span className={styles.label}>additional food</span>
+          <div className='w-[49%] max-[450px]:w-full'>
+            <span className='py-2 block text-[1.5rem] text-gray-500'>additional food</span>
             <input
-              className={styles.input}
+              className='w-full p-4 mb-4 bg-brandGrey text-[1.6rem] text-brandBlack rounded-md border border-transparent focus:border-brandGreen transition-all outline-none'
               type='text'
               placeholder='extra with food'
             ></input>
           </div>
         </div>
-        <div className={styles.order__container}>
-          <div className={styles.form__item}>
-            <span className={styles.label}>how much</span>
+        <div className='flex flex-wrap justify-between'>
+          <div className='w-[49%] max-[450px]:w-full'>
+            <span className='py-2 block text-[1.5rem] text-gray-500'>how much</span>
             <input
-              className={styles.input}
+              className='w-full p-4 mb-4 bg-brandGrey text-[1.6rem] text-brandBlack rounded-md border border-transparent focus:border-brandGreen transition-all outline-none'
               type='number'
               placeholder='how many orders'
             ></input>
           </div>
-          <div className={styles.form__item}>
-            <span className={styles.label}>date and time</span>
+          <div className='w-[49%] max-[450px]:w-full'>
+            <span className='py-2 block text-[1.5rem] text-gray-500'>date and time</span>
             <input
-              className={styles.input}
+              className='w-full p-4 mb-4 bg-brandGrey text-[1.6rem] text-brandBlack rounded-md border border-transparent focus:border-brandGreen transition-all outline-none'
               type='datetime-local'
               placeholder='date and time'
             ></input>
           </div>
         </div>
-        <div className={styles.order__container}>
-          <div className={styles.form__item}>
-            <span className={styles.label}>your address</span>
+        <div className='flex flex-wrap justify-between'>
+          <div className='w-[49%] max-[450px]:w-full'>
+            <span className='py-2 block text-[1.5rem] text-gray-500'>your address</span>
             <textarea
-              className={styles.input}
+              className='w-full p-4 mb-4 bg-brandGrey text-[1.6rem] text-brandBlack rounded-md border border-transparent focus:border-brandGreen transition-all outline-none h-[20rem] resize-none'
               id=''
               name=''
               cols='30'
@@ -73,10 +72,10 @@ function Order() {
               placeholder='enter your address'
             ></textarea>
           </div>
-          <div className={styles.form__item}>
-            <span className={styles.label}>your message</span>
+          <div className='w-[49%] max-[450px]:w-full'>
+            <span className='py-2 block text-[1.5rem] text-gray-500'>your message</span>
             <textarea
-              className={styles.input}
+              className='w-full p-4 mb-4 bg-brandGrey text-[1.6rem] text-brandBlack rounded-md border border-transparent focus:border-brandGreen transition-all outline-none h-[20rem] resize-none'
               id=''
               name=''
               cols='30'
@@ -88,7 +87,7 @@ function Order() {
         <input
           type='submit'
           value='order now'
-          className={classNames('button', styles.button)}
+          className={classNames('button', 'mt-0')}
         />
       </form>
     </section>
